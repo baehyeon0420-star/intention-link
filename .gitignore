@@ -16,9 +16,8 @@
 
 .DS_Store
 
-# Local cloned repo / crash logs
-xr-unity/
-mono_crash*.json
-
 # Unity crash logs
 mono_crash*.json
+
+# Local cloned repo
+xr-unity/

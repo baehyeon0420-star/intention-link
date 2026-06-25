@@ -6,18 +6,23 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
+.vs/
+.idea/
 *.csproj
 *.sln
 *.user
+*.userprefs
 *.pidb
 *.booproj
 *.svd
 *.pdb
+*.mdb
+*.opendb
+*.VC.db
 
 .DS_Store
+Thumbs.db
 
-# Unity crash logs
-mono_crash*.json
-
-# Local cloned repo
-xr-unity/
+*.apk
+*.aab
+*.unitypackage

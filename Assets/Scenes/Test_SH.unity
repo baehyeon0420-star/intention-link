@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 289929779}
   - component: {fileID: 289929778}
   - component: {fileID: 289929777}
+  - component: {fileID: 289929780}
   m_Layer: 0
   m_Name: EMGManager
   m_TagString: Untagged
@@ -164,8 +165,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b062962057146e3ad4b9a0dbeab644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EMGSerialReader
-  portName: /dev/cu.usbserial-10
+  portName: /dev/cu.usbserial-1120
   baudRate: 115200
+  restBaseline: 18
+  maxContraction: 1321
+  thresholdLight: 0.1
+  thresholdStrong: 0.4
+  thresholdGrip: 0.7
 --- !u!4 &289929779
 Transform:
   m_ObjectHideFlags: 0
@@ -181,6 +187,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &289929780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289929776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2baac79d4f04c52bc0fb47adfb4c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EMGMLClassifier
+  decisionThreshold: 0.5
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

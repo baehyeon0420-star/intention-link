@@ -23,6 +23,7 @@ public class EMGColorTest : MonoBehaviour
             "REST"   => Color.white,   // 휴식 상태
             "LIGHT"  => Color.yellow,  // 약한 수축
             "STRONG" => Color.red,     // 강한 수축
+            "GRIP"   => Color.blue,    // 최대 수축
             _        => Color.gray     // 알 수 없는 상태 (초기화 전 등)
         };
 

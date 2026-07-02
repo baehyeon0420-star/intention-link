@@ -37,9 +37,10 @@ public class EMGStateManager : MonoBehaviour
 
     void Update()
     {
-        // LIGHT 또는 STRONG이면 근육이 활성화된 것으로 판단
+        // LIGHT, STRONG, GRIP이면 근육이 활성화된 것으로 판단
         bool isActive = EMGSerialReader.CurrentState == "LIGHT" ||
-                        EMGSerialReader.CurrentState == "STRONG";
+                        EMGSerialReader.CurrentState == "STRONG" ||
+                        EMGSerialReader.CurrentState == "GRIP";
 
         // REST → ACTIVE: 수축 시작 시각 기록
         if (isActive && !_wasActive)

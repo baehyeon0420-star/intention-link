@@ -70,4 +70,4 @@ intention-link/
 - [ ] 분류 정확도 개선 및 다중 제스처 확장
 
 ## 관련 자료
-- 관련 논문 초안: sEMG 진폭 편차 정규화를 통한 실시간 수축 강도 시각화 (별도 정리 예정)
+- [sEMG 진폭 편차 정규화를 통한 실시간 수축 강도 시각화 논문 (PDF)](./paper/sEMG_ContractionIntensity_Normalization.pdf) — 본 프로젝트의 EMG 신호처리 이론적 배경
